@@ -130,3 +130,17 @@ input[type="number"] {
   --heading-font: "Poppins", sans-serif;
   --body-font: "Open Sans", sans-serif;
 }
+
+/* || Global styles */
+body {
+  color: var(--color-dark-cyan);
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-regular);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+}
