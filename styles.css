@@ -117,3 +117,16 @@ input[type="number"] {
     scroll-behavior: auto !important;
   }
 }
+
+/* || Custom properties */
+:root {
+  --color-pink: hsl(322 100% 66%);
+  --color-pale-cyan: hsl(193 100% 96%);
+  --color-dark-cyan: hsl(192 100% 9%);
+  --color-grayish-blue: hsl(208 11% 55%);
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --heading-font: "Poppins", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
