@@ -86,18 +86,6 @@ textarea:not([rows]) {
   min-height: 10em;
 }
 
-/* Hide arrows/spinners from input type number on Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Hide arrows/spinners from input type number on Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
@@ -124,6 +112,7 @@ input[type="number"] {
   --color-pale-cyan: hsl(193 100% 96%);
   --color-dark-cyan: hsl(192 100% 9%);
   --color-grayish-blue: hsl(208 11% 55%);
+  --color-white: hsl(0 0% 100%);
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
@@ -144,3 +133,68 @@ h3,
 h4 {
   font-family: var(--heading-font);
 }
+
+/* || Page container styles */
+.page {
+  max-width: 90rem;
+  margin-inline: auto;
+}
+
+/* || Header styles */
+.header {
+  padding: 1.625rem 1rem;
+}
+
+.header__inner {
+  max-width: 80rem;
+  margin-inline: auto;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* || Logo and link styles */
+.link {
+  transition: transform 0.2s ease-in-out 0s;
+}
+
+.link:hover {
+  transform: scale(1.15);
+}
+
+.logo {
+  width: 6.5rem;
+  height: 1rem;
+}
+
+/* || CTA styles */
+.cta {
+  display: inline-block;
+  padding: 0.625rem 3.75rem 0.875rem;
+  background-color: var(--color-pink);
+  border-radius: 1.25rem;
+  box-shadow: 0.125rem 0.1875rem 0.375rem 0.0625rem rgb(255 82 193 / 0.17);
+  color: var(--color-white);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+  text-decoration: none;
+}
+
+.cta--secondary {
+  background-color: var(--color-white);
+  box-shadow: 0 0.125rem 0.4375rem rgb(0 0 0 / 0.1);
+  color: inherit;
+}
+
+.cta--small {
+  padding: 0.25rem 1.375rem 0.375rem 1.4375rem;
+  border-radius: 0.75rem;
+  font-size: 0.625rem;
+}
+
+/* || Main content styles */
+
+/* || Footer styles */
