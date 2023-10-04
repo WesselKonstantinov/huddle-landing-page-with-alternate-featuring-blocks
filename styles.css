@@ -71,6 +71,7 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -125,6 +126,7 @@ body {
   color: var(--color-dark-cyan);
   font-family: var(--body-font);
   font-weight: var(--font-weight-regular);
+  text-align: center;
 }
 
 h1,
@@ -132,12 +134,17 @@ h2,
 h3,
 h4 {
   font-family: var(--heading-font);
+  font-weight: var(--font-weight-semibold);
 }
 
 /* || Page container styles */
 .page {
   max-width: 90rem;
   margin-inline: auto;
+}
+
+.page > * + * {
+  margin-top: var(--flow-space, 3.5rem);
 }
 
 /* || Header styles */
@@ -196,5 +203,27 @@ h4 {
 }
 
 /* || Main content styles */
+.hero {
+  padding-inline: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.hero__intro > * + * {
+  margin-top: var(--flow-space, 2rem);
+}
+
+.hero__title {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.hero__text {
+  --flow-space: 1.25rem;
+}
 
 /* || Footer styles */
+.footer-wrapper {
+  --flow-space: 7.5rem;
+}
