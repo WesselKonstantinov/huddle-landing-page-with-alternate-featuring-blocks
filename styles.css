@@ -237,6 +237,8 @@ h4 {
 /* || Feature card section styles */
 .feature-card-stack {
   padding-inline: 1.25rem;
+  margin-inline: auto;
+  max-width: 24rem;
 }
 
 .feature-card-stack > * + * {
@@ -244,13 +246,19 @@ h4 {
 }
 
 .feature-card {
-  padding: 1.5rem 2.5rem 2.0625rem;
+  padding: 1.5rem 2.46875rem 2.0625rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   background-color: var(--color-white);
   border-radius: 1rem;
   box-shadow: 0 0 0.875rem rgb(0 0 0 / 0.07);
+}
+
+.feature-card__frame {
+  display: flex;
+  align-items: center;
+  flex-basis: 16rem;
 }
 
 .feature-card__info > * + * {
