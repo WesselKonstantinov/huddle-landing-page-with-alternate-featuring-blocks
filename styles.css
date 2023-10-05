@@ -203,10 +203,21 @@ h4 {
 }
 
 /* || Main content styles */
+.main__inner {
+  max-width: 79.375rem;
+  margin-inline: auto;
+}
+
+.main__inner > * + * {
+  margin-top: 6rem;
+}
+
+/* || Hero styles */
 .hero {
   padding-inline: 2.25rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 3.5rem;
 }
 
@@ -221,6 +232,39 @@ h4 {
 
 .hero__text {
   --flow-space: 1.25rem;
+}
+
+/* || Feature card section styles */
+.feature-card-stack {
+  padding-inline: 1.25rem;
+}
+
+.feature-card-stack > * + * {
+  margin-top: 2.5rem;
+}
+
+.feature-card {
+  padding: 1.5rem 2.5rem 2.0625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  box-shadow: 0 0 0.875rem rgb(0 0 0 / 0.07);
+}
+
+.feature-card__info > * + * {
+  margin-top: 1rem;
+}
+
+.feature-card__title {
+  font-size: 1.25rem;
+  line-height: inherit;
+}
+
+.feature-card__text {
+  color: var(--color-grayish-blue);
+  font-size: 0.875rem;
 }
 
 /* || Footer styles */
