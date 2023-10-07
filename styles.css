@@ -141,6 +141,11 @@ h4 {
 .page {
   max-width: 90rem;
   margin-inline: auto;
+  background-image: url("./images/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  background-color: var(--color-pale-cyan);
 }
 
 .page > * + * {
@@ -224,13 +229,9 @@ h4 {
   margin-inline: auto;
 }
 
-.main__inner > * + * {
-  margin-top: 6rem;
-}
-
 /* || Hero styles */
 .hero {
-  padding-inline: 2.25rem;
+  padding: 0 2.25rem 2.3125rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,17 +253,17 @@ h4 {
 
 /* || Feature card section styles */
 .feature-card-stack {
-  padding-inline: 1.25rem;
-  margin-inline: auto;
-  max-width: 24rem;
-}
-
-.feature-card-stack > * + * {
-  margin-top: 2.5rem;
+  padding: 3.6875rem 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  background-color: var(--color-white);
 }
 
 .feature-card {
   padding: 1.5rem 2.46875rem 2.0625rem;
+  max-width: 24rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -294,9 +295,11 @@ h4 {
 /* || CTA card styles */
 .cta-card {
   padding: 2.5625rem 0.75rem;
-  margin-inline: 0.625rem;
+  margin-top: 5rem;
+  margin-inline: -0.625rem;
   position: relative;
   max-width: 50rem;
+  align-self: stretch;
   background-color: var(--color-white);
   border-radius: 0.9375rem;
   box-shadow: 0 0 0.875rem rgb(0 0 0 / 0.07);
@@ -312,10 +315,6 @@ h4 {
 }
 
 /* || Footer styles */
-.footer-wrapper {
-  --flow-space: 7.5rem;
-}
-
 .footer {
   margin-top: -4.1875rem;
   padding: 8.6875rem 1rem 2.875rem;
@@ -358,11 +357,14 @@ h4 {
 .footer__contact-link {
   align-self: center;
   color: inherit;
+  line-height: 1.71;
   text-decoration: none;
 }
 
 .footer__nav-link {
+  display: inline-block;
   color: inherit;
+  line-height: 1.93;
   text-decoration: none;
 }
 
