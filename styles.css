@@ -161,7 +161,7 @@ h4 {
 }
 
 .page > * + * {
-  margin-top: var(--flow-space, 3.5rem);
+  margin-top: var(--page-flow-space, 3.5rem);
 }
 
 /* || Header styles */
@@ -241,7 +241,7 @@ h4 {
 }
 
 .hero__inner {
-  max-width: 79.375rem;
+  max-width: 60ch;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
@@ -429,4 +429,70 @@ h4 {
 
 .footer__grid > * + * {
   margin-top: var(--footer-flow-space, 1rem);
+}
+
+/* || Media queries */
+@media (min-width: 65rem) {
+  body {
+    font-size: 1.125rem;
+    text-align: left;
+  }
+
+  .page {
+    background-image: url("./images/bg-hero-desktop.svg");
+  }
+
+  .header {
+    padding-block: 3rem;
+  }
+
+  .logo {
+    width: 12.5rem;
+    height: 1.9375rem;
+  }
+
+  .cta {
+    padding: 1.0625rem 4.34375rem 1.25rem;
+    font-size: 0.875rem;
+    border-radius: 1.75rem;
+  }
+
+  .cta--small {
+    padding: 0.8125rem 3.9375rem 1rem 4.0625rem;
+    border-radius: 1.5rem;
+  }
+
+  .cta--secondary {
+    box-shadow: 0 0.1875rem 0.6875rem rgb(0 0 0 / 0.1);
+  }
+
+  .main {
+    --page-flow-space: 1rem;
+  }
+
+  .hero {
+    padding-bottom: 4.25rem;
+  }
+
+  .hero__inner {
+    max-width: 79.375rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero__intro {
+    flex-basis: 42.2%;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .hero__text {
+    --flow-space: 2rem;
+  }
+
+  .hero__frame {
+    flex-basis: 53.5%;
+  }
 }
